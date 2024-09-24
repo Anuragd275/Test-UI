@@ -75,8 +75,8 @@ return (
                     <AvatarFallback>JD</AvatarFallback>
                   </Avatar>
                   <div>
-                    <p className="text-sm font-medium">John Doe</p>
-                    <p className="text-xs text-black">john.doe@example.com</p>
+                    <p className="text-sm font-medium text-black">Om shukla</p>
+                    <p className="text-xs text-black">testUI@example.com</p>
                   </div>
                 </div>
                 <DropdownMenuItem>
@@ -114,8 +114,8 @@ return (
                     <AvatarFallback>JD</AvatarFallback>
                   </Avatar>
                   <div>
-                    <p className="text-sm font-medium">John Doe</p>
-                    <p className="text-xs text-black">john.doe@example.com</p>
+                    <p className="text-sm font-medium  text-black">Om Shukla</p>
+                    <p className="text-xs text-black">testUI@example.com</p>
                   </div>
                 </div>
                 <nav className="flex flex-col space-y-4 mt-4">
