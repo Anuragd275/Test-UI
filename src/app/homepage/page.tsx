@@ -14,7 +14,6 @@ import Link from "next/link"
 
 export default function HomePage() {
 const [showScrollTop, setShowScrollTop] = useState(false)
-const [isMenuOpen, setIsMenuOpen] = useState(false)
 const scrollContainerRef = useRef<HTMLDivElement>(null)
 
 useEffect(() => {
