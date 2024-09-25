@@ -162,7 +162,7 @@ export default function AnimatedPremiumSignupPage() {
                   )}
                 </AnimatePresence>
               </motion.div>
-              <motion.div className="space-y-2" variants={inputVariants} whileFocus="focus" whileBlur="blur">
+              <motion.div className="space-y-2" variants={inputVariants} whileFocus="focus">
                 <Label htmlFor="password" className="text-lg text-pink-100 flex items-center">
                   <Lock className="inline-block mr-2 h-5 w-5" />
                   Password
