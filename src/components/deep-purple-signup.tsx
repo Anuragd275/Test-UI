@@ -1,5 +1,6 @@
 "use client"
 
+import React from "react"
 import { useState, useEffect } from "react"
 import { motion, AnimatePresence } from "framer-motion"
 import { Button } from "@/components/ui/button"
@@ -108,7 +109,7 @@ export function DeepPurpleSignup() {
               </motion.div>
             </motion.div>
             <form onSubmit={handleSubmit} className="space-y-6">
-              <motion.div className="space-y-2" variants={inputVariants} whileFocus="focus" whileBlur="blur">
+              <motion.div className="space-y-2" variants={inputVariants} whileFocus="focus">
                 <Label htmlFor="name" className="text-lg text-purple-100 flex items-center">
                   <User className="inline-block mr-2 h-5 w-5" />
                   Full Name
@@ -134,7 +135,7 @@ export function DeepPurpleSignup() {
                   )}
                 </AnimatePresence>
               </motion.div>
-              <motion.div className="space-y-2" variants={inputVariants} whileFocus="focus" whileBlur="blur">
+              <motion.div className="space-y-2" variants={inputVariants} whileFocus="focus">
                 <Label htmlFor="email" className="text-lg text-purple-100 flex items-center">
                   <Mail className="inline-block mr-2 h-5 w-5" />
                   Email Address
@@ -161,7 +162,7 @@ export function DeepPurpleSignup() {
                   )}
                 </AnimatePresence>
               </motion.div>
-              <motion.div className="space-y-2" variants={inputVariants} whileFocus="focus" whileBlur="blur">
+              <motion.div className="space-y-2" variants={inputVariants} whileFocus="focus">
                 <Label htmlFor="password" className="text-lg text-purple-100 flex items-center">
                   <Lock className="inline-block mr-2 h-5 w-5" />
                   Password
