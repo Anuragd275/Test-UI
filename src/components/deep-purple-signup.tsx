@@ -1,6 +1,5 @@
 "use client"
 
-import React from "react"
 import { useState, useEffect } from "react"
 import { motion, AnimatePresence } from "framer-motion"
 import { Button } from "@/components/ui/button"
@@ -10,7 +9,7 @@ import { Label } from "@/components/ui/label"
 import { BarChart2, ArrowRight, Mail, Lock, User, IndianRupee, Sparkles } from "lucide-react"
 import Link from "next/link"
 
-export default function DeepPurpleSignupPage() {
+export function DeepPurpleSignup() {
   const [name, setName] = useState("")
   const [email, setEmail] = useState("")
   const [password, setPassword] = useState("")
@@ -109,7 +108,7 @@ export default function DeepPurpleSignupPage() {
               </motion.div>
             </motion.div>
             <form onSubmit={handleSubmit} className="space-y-6">
-              <motion.div className="space-y-2" variants={inputVariants} whileFocus="focus">
+              <motion.div className="space-y-2" variants={inputVariants} whileFocus="focus" whileBlur="blur">
                 <Label htmlFor="name" className="text-lg text-purple-100 flex items-center">
                   <User className="inline-block mr-2 h-5 w-5" />
                   Full Name
@@ -135,7 +134,7 @@ export default function DeepPurpleSignupPage() {
                   )}
                 </AnimatePresence>
               </motion.div>
-              <motion.div className="space-y-2" variants={inputVariants} whileFocus="focus">
+              <motion.div className="space-y-2" variants={inputVariants} whileFocus="focus" whileBlur="blur">
                 <Label htmlFor="email" className="text-lg text-purple-100 flex items-center">
                   <Mail className="inline-block mr-2 h-5 w-5" />
                   Email Address
@@ -162,7 +161,7 @@ export default function DeepPurpleSignupPage() {
                   )}
                 </AnimatePresence>
               </motion.div>
-              <motion.div className="space-y-2" variants={inputVariants} whileFocus="focus">
+              <motion.div className="space-y-2" variants={inputVariants} whileFocus="focus" whileBlur="blur">
                 <Label htmlFor="password" className="text-lg text-purple-100 flex items-center">
                   <Lock className="inline-block mr-2 h-5 w-5" />
                   Password
